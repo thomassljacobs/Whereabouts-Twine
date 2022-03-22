@@ -9,7 +9,34 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Whereabouts.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Whereabouts" startnode="1" creator="Twine" creator-version="2.3.16" ifid="C8EFB507-3399-47AB-9E1A-79B48BD955C9" zoom="0.6" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="hello" tags="" position="129,27" size="100,100">Hello
+<tw-storydata name="Whereabouts" startnode="1" creator="Twine" creator-version="2.3.16" ifid="C8EFB507-3399-47AB-9E1A-79B48BD955C9" zoom="0.6" format="Harlowe" format-version="3.2.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@keyframes example {
+from {background-color: black; }
+to {background-color: grey; }
+}
+
+
+tw-story[tags~="fade"] 
+{
+padding: 1rem
+background-color: black;
+animation-name: example;
+animation-duration: 30s;
+animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+
+.jazz tw-hook[name="touch"] {
+ color: #4169E1;
+ font-weight: bold;
+}
+
+.jazz .enchantment-mouseover {
+    border-bottom: none;
+}
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="hello" tags="" position="129,27" size="100,100">Hello
 
 
 [[Hello]]
@@ -30,9 +57,9 @@
 
 [[Who are you?]]
 [[No, really, where am I?]]
-[[Where&#39;s Sally?|sallywhere]] </tw-passagedata><tw-passagedata pid="5" name="I&#39;m in my house" tags="" position="254,402" size="100,100">You //were// in your house - with Sally. You&#39;re now here.
+[[Where&#39;s Sally?|sallywhere]] </tw-passagedata><tw-passagedata pid="5" name="I&#39;m in my house" tags="" position="204,478" size="100,100">You *were* in your house - with Sally. You&#39;re now here.
 [[So, where&#39;s here?|No, really, where am I?]]
-[[So, where&#39;s Sally?|sallywhere]]</tw-passagedata><tw-passagedata pid="6" name="I&#39;m dead" tags="" position="680,819" size="100,100">Dead is your word for it.
+[[So, where&#39;s Sally?|sallywhere]]</tw-passagedata><tw-passagedata pid="6" name="I&#39;m dead" tags="" position="680,829" size="100,100">Dead is your word for it.
 
 [[What&#39;s yours?]]
 [[What&#39;s Sally&#39;s word for it?]]
@@ -42,20 +69,20 @@
 [[What the hell are you talking about?]]
 [[Okay, I&#39;ll wait|wait]]</tw-passagedata><tw-passagedata pid="8" name="What the hell are you talking about?" tags="" position="362,589" size="100,100">You might call it &quot;moving on&quot;
 
-[[You mean I&#39;m dead?|I&#39;m dead]]</tw-passagedata><tw-passagedata pid="9" name="cantsee" tags="" position="1048,199" size="100,100">When you&#39;re born, your eyes take a few days to adjust. Think of it like that. In a few moments, you&#39;ll start to take in your new surroundings.
+[[You mean I&#39;m dead?|I&#39;m dead]]</tw-passagedata><tw-passagedata pid="9" name="cantsee" tags="" position="1104,143" size="100,100">When you&#39;re born, your eyes take a few days to adjust. Think of it like that. In a few moments, you&#39;ll start to take in your new surroundings.
 
 [[You mean I&#39;m being born again?]]
-//[[&quot;new&quot;?]]//</tw-passagedata><tw-passagedata pid="10" name="What have you done with her?" tags="" position="1305,256" size="100,100">She&#39;s still there, in the kitchen. It&#39;s you who&#39;s moved on.
+[[*&quot;new&quot;*?|&quot;new&quot;?]]</tw-passagedata><tw-passagedata pid="10" name="What have you done with her?" tags="" position="1414,338" size="100,100">She&#39;s still there, in the kitchen. It&#39;s you who&#39;s moved on.
 
-//[[moved on?]]//
-[[You mean I&#39;m //dead//?|I&#39;m dead]]</tw-passagedata><tw-passagedata pid="11" name="You mean I&#39;m being born again?" tags="" position="717,491" size="100,100">If you like
+*[[moved on?]]*
+[[You mean I&#39;m *dead*?|I&#39;m dead]]</tw-passagedata><tw-passagedata pid="11" name="You mean I&#39;m being born again?" tags="" position="717,491" size="100,100">If you like
 
 [[What the hell are you talking about?]] </tw-passagedata><tw-passagedata pid="12" name="sallywhere" tags="" position="1239,37" size="100,100">she&#39;s safe, which is what&#39;s important.
 
 [[Why can&#39;t I see anything?|cantsee]] 
 [[What have you done with her?]]
 [[Where am I?]]
-[[What&#39;s going on?|No, really, where am I?]]</tw-passagedata><tw-passagedata pid="13" name="What&#39;s yours?" tags="" position="236,832" size="100,100">There&#39;s no point in me telling you. It would pass over you like a breeze does a ship&#39;s sail.
+[[What&#39;s going on?|No, really, where am I?]]</tw-passagedata><tw-passagedata pid="13" name="What&#39;s yours?" tags="" position="129,960" size="100,100">There&#39;s no point in me telling you. It would pass over you like a breeze does a ship&#39;s sail.
 
 [[Tell me anyway]]
 [[Fine, maybe I&#39;d rather not know]]</tw-passagedata><tw-passagedata pid="14" name="What&#39;s Sally&#39;s word for it?" tags="" position="949,740" size="100,100">Sally doesn&#39;t know it yet. She might think she does, but no-one really does until their time. Neither of you have to worry though. She&#39;s got a while before she&#39;s here.
@@ -68,7 +95,7 @@
 
 [[Thanks]]</tw-passagedata><tw-passagedata pid="16" name="Fine, maybe I&#39;d rather not know" tags="" position="1281,437" size="100,100">It&#39;s probably for the best.
 
-[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="17" name="Tell me anyway" tags="" position="521,856" size="100,100">You experience the feeling of a lover&#39;s whisper, hearing your name in a crowd, and a watching the sun set all in one moment. It is over almost before it begins. You almost don&#39;t recognise it.
+[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="17" name="Tell me anyway" tags="" position="539,987" size="100,100">(text-style:&quot;underline&quot;)[You experience the feeling of a lover&#39;s whisper, hearing your name in a crowd, and a watching the sun set all in one moment. It is over almost before it begins. You almost don&#39;t recognise it.]
 
 [[Was that it?]]
 [[Wow]]
@@ -79,15 +106,15 @@
 
 [[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="21" name="Wow" tags="" position="156,1510" size="100,100">Wow indeed.
 
-[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="22" name="Is that supposed to comfort me?" tags="" position="1884,721" size="100,100">No. It&#39;s just the truth
+[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="22" name="Is that supposed to comfort me?" tags="" position="1875,629" size="100,100">No. It&#39;s just the truth
 
-[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="23" name="How can you know that?" tags="" position="690,941" size="100,100">I know a lot of things
+[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="23" name="How can you know that?" tags="" position="736,977" size="100,100">I know a lot of things
 
-[[Yes, but how do you know &#39;&#39;that&#39;&#39;]]</tw-passagedata><tw-passagedata pid="24" name="sallycircumstance" tags="" position="1220,760" size="100,100">It&#39;s best not to worry the mind with questions like these. I&#39;m sure you understand.
+[[Yes, but how do you know that]]</tw-passagedata><tw-passagedata pid="24" name="sallycircumstance" tags="" position="1165,766" size="100,100">It&#39;s best not to worry the mind with questions like these. I&#39;m sure you understand.
 
 [[Actually, I don&#39;t understand anything that&#39;s going on at all right now]]
 [[I&#39;d really like to know]]
-</tw-passagedata><tw-passagedata pid="25" name="I&#39;d really like to know" tags="" position="1451,952" size="200,100">It&#39;s not the sort of knowledge you&#39;re meant to have
+</tw-passagedata><tw-passagedata pid="25" name="I&#39;d really like to know" tags="" position="1360,966" size="200,100">It&#39;s not the sort of knowledge you&#39;re meant to have
 
 
 [[I suppose it&#39;s for the best]]
@@ -99,144 +126,405 @@
 [[you did?]]
 [[Wait, really?|you did?]]
 [[No you didn&#39;t]]
-[[That was it?|Was that it?]]</tw-passagedata><tw-passagedata pid="27" name="Thanks" tags="" position="1765,536.6666666666666" size="100,100">You&#39;re welcome.
+[[That was it?|Was that it?]]</tw-passagedata><tw-passagedata pid="27" name="Thanks" tags="" position="1660,499" size="100,100">You&#39;re welcome.
 
-[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="28" name="next" tags="" position="859,1405" size="100,100">What happens next is that you come with me. Everything&#39;s okay.You&#39;ve done nothing wrong. Everyone is sad to see you go. 
+[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="28" name="next" tags="" position="792,1418" size="100,100">What happens next is that you come with me. Everything&#39;s okay.You&#39;ve done nothing wrong. Everyone is sad to see you go. 
 But it&#39;s time, and so we&#39;ve got to go.
 
-[[I&#39;m ready|end]]
+[[I&#39;m ready|death]]
 [[I don&#39;t want to go]]
 [[Have you done this before?]]
 [[Will I be with anyone I recognise?]]
-[[Do *you* know what happens next?]]</tw-passagedata><tw-passagedata pid="29" name="you did?" tags="" position="576,1934" size="100,100">Promise.
+[[Do *you* know what happens next? -&gt;doyouknow]]</tw-passagedata><tw-passagedata pid="29" name="you did?" tags="" position="576,1934" size="100,100">Promise.
 
 [[Oh. Did I like it?]]
-[[I can&#39;t remember hearing it]]</tw-passagedata><tw-passagedata pid="30" name="No you didn&#39;t" tags="" position="671,1586" size="100,100">It&#39;s okay. You&#39;re not really supposed to remember. What happens next is more important.
+[[I can&#39;t remember hearing it]]</tw-passagedata><tw-passagedata pid="30" name="No you didn&#39;t" tags="" position="403,1497" size="100,100">It&#39;s okay. You&#39;re not really supposed to remember. What happens next is more important.
 
 [[What happens next?|next]]</tw-passagedata><tw-passagedata pid="31" name="Oh. Did I like it?" tags="" position="742,1756" size="100,100">No one ever likes it, but everyone hears it one day. For the record, I think yours was one of the nicer ways to hear it.
 
-[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="32" name="I can&#39;t remember hearing it" tags="" position="221,1928" size="100,100">The fact you&#39;ve remembered long enough to ask me about it is impressive in itself. You&#39;ll forget this soon enough.
+[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="32" name="I can&#39;t remember hearing it" tags="" position="197,1923" size="100,100">The fact you&#39;ve remembered long enough to ask me about it is impressive in itself. You&#39;ll forget this soon enough.
 
 [[Wait, what was I saying?]]</tw-passagedata><tw-passagedata pid="33" name="I suppose it&#39;s for the best" tags="" position="831,1181" size="100,100">Exactly.
 
 [[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="34" name="I hope it happens peacefully for her" tags="" position="1240,1372" size="100,100">It does.
 
-[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="35" name="I won&#39;t tell anyone" tags="" position="1103,885" size="100,100">You couldn&#39;t if you tried
+[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="35" name="I won&#39;t tell anyone" tags="" position="1031,875" size="100,100">You couldn&#39;t if you tried
 
 [[I&#39;ll miss her]]
 [[Will she be in pain?]]
 [[How can you know that?]]
-[[What do you mean? What&#39;s going to happen?|next]]</tw-passagedata><tw-passagedata pid="36" name="No one will know. And it will make everything a bit easier for me" tags="" position="1736,1126" size="100,100">She&#39;ll go peacefully, in her sleep, in quite a long time. The rest of it won&#39;t be as good as the time she spent with you, but it will still be good. She&#39;ll be loved, and have somewhere to sleep, which is the best anyone can hope for.
+[[What do you mean? What&#39;s going to happen?|next]]</tw-passagedata><tw-passagedata pid="36" name="No one will know. And it will make everything a bit easier for me" tags="" position="1685,1134" size="100,100">She&#39;ll go peacefully, in her sleep, in quite a long time. The rest of it won&#39;t be as good as the time she spent with you, but it will still be good. She&#39;ll be loved, and have somewhere to sleep, which is the best anyone can hope for.
 
-[[Thank you]]</tw-passagedata><tw-passagedata pid="37" name="I&#39;ll miss her" tags="" position="1346,1487" size="100,100">You won&#39;t for too long. And she&#39;ll miss you too.
+[[Thank you]]</tw-passagedata><tw-passagedata pid="37" name="I&#39;ll miss her" tags="" position="1247,1518" size="100,100">You won&#39;t for too long. And she&#39;ll miss you too.
 
 [[What happens next?|next]]
-[[Will I ever see her again?]]</tw-passagedata><tw-passagedata pid="38" name="Will she be in pain?" tags="" position="1090,1551" size="100,100">Not much at all.
+[[Will I ever see her again?]]</tw-passagedata><tw-passagedata pid="38" name="Will she be in pain?" tags="" position="1135,1544" size="100,100">Not much at all.
 
 [[So, what happens next? For me, I mean|next]]</tw-passagedata><tw-passagedata pid="39" name="Wait, what was I saying?" tags="" position="207,1726" size="100,100">You were asking what happens next.
 
-[[Okay - what &#39;&#39;does&#39;&#39; happen next?|next]]</tw-passagedata><tw-passagedata pid="40" name="Yes, but how do you know &#39;&#39;that&#39;&#39;" tags="" position="1704,1607" size="200,100">It&#39;s part of the job.
-
-[[And what&#39;s the job?]]</tw-passagedata><tw-passagedata pid="41" name="Will I ever see her again?" tags="" position="1321,1656" size="100,100">No.
+[[Okay - what *does* happen next?|next]]</tw-passagedata><tw-passagedata pid="40" name="Will I ever see her again?" tags="" position="1505,1607" size="100,100">No.
 
 [[ever?]]
-[[will she ever see me?]]</tw-passagedata><tw-passagedata pid="42" name="Thank you" tags="" position="1661,1336" size="100,100">You&#39;re welcome
+[[will she ever see me?]]</tw-passagedata><tw-passagedata pid="41" name="Thank you" tags="" position="1449,1322" size="100,100">You&#39;re welcome
 
-[[What happens now?|next]]</tw-passagedata><tw-passagedata pid="43" name="ever?" tags="" position="1513,1812" size="100,100">Never.
+[[What happens now?|next]]</tw-passagedata><tw-passagedata pid="42" name="ever?" tags="" position="1516,1727" size="100,100">Never.
 
 [[how come?]]
-[[I hope she doesn&#39;t miss me too much]]</tw-passagedata><tw-passagedata pid="44" name="how come?" tags="" position="1173,1987" size="100,100">It&#39;s difficult to explain. But the more you wait, the more you&#39;ll understand.
+[[I hope she doesn&#39;t miss me too much]]</tw-passagedata><tw-passagedata pid="43" name="how come?" tags="" position="1173,1987" size="100,100">It&#39;s difficult to explain. But the more you wait, the more you&#39;ll understand.
 
 [[So, what happens next?|next]]
-[[Okay, I&#39;ll wait then.|wait]]</tw-passagedata><tw-passagedata pid="45" name="I hope she doesn&#39;t miss me too much" tags="" position="1917,1456" size="100,200">She will. But she&#39;ll get through it.
+[[Okay, I&#39;ll wait then.|wait]]</tw-passagedata><tw-passagedata pid="44" name="I hope she doesn&#39;t miss me too much" tags="" position="2058,1866" size="100,100">She will. But she&#39;ll get through it.
 
-[[</tw-passagedata><tw-passagedata pid="46" name="will she ever see me?" tags="" position="973,1837" size="100,100">No.
+[[What happens next?|next]]</tw-passagedata><tw-passagedata pid="45" name="will she ever see me?" tags="" position="1004,1858" size="100,100">No.
 
 [[how come?]]
-[[where exactly am I going?|next]]</tw-passagedata><tw-passagedata pid="47" name="wait" tags="" position="2130,630" size="200,100">You wait, and the darkness begins to fade to grey. Over time, the figure you&#39;re with becomes clearer, and you forget why you at first thought they didn&#39;t look normal.
-What you were doing in the kitchen with Sally fades, and the rest of it too. Like standing underneath a river, this new world flows above and around you, until it is all you can see.</tw-passagedata><tw-passagedata pid="48" name="And what&#39;s the job?" tags="" position="1453,2017" size="100,100">You&#39;re the job.
+[[where exactly am I going?|next]]</tw-passagedata><tw-passagedata pid="46" name="wait" tags="fade" position="2358,513" size="200,100">
+(text-style:&quot;underline&quot;)[You wait, and the darkness begins to fade to grey. Over time, the figure you&#39;re with becomes clearer, and you forget why you at first thought they didn&#39;t look normal.
+What you were doing in the kitchen with Sally fades, and the rest of it too. Like standing underneath a river, this new world flows above and around you, until it is all you can see.]
+</tw-passagedata><tw-passagedata pid="47" name="And what&#39;s the job?" tags="" position="1499,2007" size="100,100">You&#39;re the job.
 
-[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="49" name="Actually, I don&#39;t understand anything that&#39;s going on at all right now" tags="" position="1715,849" size="100,100">You will, soon enough. You can stay here and wait, if you want.
-
-[[*wait*|wait]]
-[[I&#39;d like to ask a few more questions first|questions]]</tw-passagedata><tw-passagedata pid="50" name="Is Sally okay?" tags="" position="2162,1378" size="100,100">She will be.
+[[So, what happens next?|next]]</tw-passagedata><tw-passagedata pid="48" name="Actually, I don&#39;t understand anything that&#39;s going on at all right now" tags="" position="1653,850" size="100,100">You will, soon enough. You can stay here and wait, if you want.
+(text-style:&quot;underline&quot;)[[*wait*|wait]]
+[[I&#39;d like to ask a few more questions first|questions]]</tw-passagedata><tw-passagedata pid="49" name="Is Sally okay?" tags="" position="2164,1377" size="100,100">She will be.
 
 [[What happens next?|next]]
 [[Will I ever see her again?]]
-[[What happens when this happens to her?|sallycircumstance]]</tw-passagedata><tw-passagedata pid="51" name="How did I die?" tags="" position="2345.6666666666665,1088" size="100,100">It doesn&#39;t matter.
+[[What happens when this happens to her?|sallycircumstance]]</tw-passagedata><tw-passagedata pid="50" name="How did I die?" tags="" position="2418,1103" size="100,100">It doesn&#39;t matter.
 
 [[Is Sally okay?]]
-[[What happens next?|next]]</tw-passagedata><tw-passagedata pid="52" name="What happens if I wait?" tags="" position="1972,1144" size="100,100">You&#39;ll have to see.
+[[What happens next?|next]]</tw-passagedata><tw-passagedata pid="51" name="What happens if I wait?" tags="" position="1893,1003" size="100,100">You&#39;ll have to see.
 
-[[*wait*|wait]]
-[[I&#39;d rather not find out - what happens next?|next]]</tw-passagedata><tw-passagedata pid="53" name="I don&#39;t want to go" tags="" position="818,1983" size="100,100">Not many people do, I&#39;ve heard
+(text-style:&quot;underline&quot;)[[*wait*|wait]]
+[[I&#39;d rather not find out - what happens next?|next]]</tw-passagedata><tw-passagedata pid="52" name="I don&#39;t want to go" tags="" position="889,2004" size="100,100">Not many people do, I&#39;ve heard
 
 [[I can imagine.]]
-[[You&#39;ve &#39;&#39;heard?&#39;&#39;]]
-</tw-passagedata><tw-passagedata pid="54" name="Have you done this before?" tags="" position="1283,2142" size="100,100">Of course I&#39;ve done this before.
+[[You&#39;ve *&quot;heard&quot;*? |heard]]
+</tw-passagedata><tw-passagedata pid="53" name="Have you done this before?" tags="" position="1099,2203" size="100,100">Of course I&#39;ve done this before.
 
 [[I trust you]]
-[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="55" name="Will I be with anyone I recognise?" tags="" position="1502,2175" size="100,100">You won&#39;t recognise them, and they won&#39;t recognise you.
+[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="54" name="Will I be with anyone I recognise?" tags="" position="1475,2193" size="100,100">You won&#39;t recognise them, and they won&#39;t recognise you.
 
 [[Is it them though?]]
 [[Is it safe?]]
-[[Okay, I&#39;m ready to go|end]]</tw-passagedata><tw-passagedata pid="56" name="Do *you* know what happens next?" tags="" position="1018,2165" size="100,100">Of course I do
+[[Okay, I&#39;m ready to go|death]]</tw-passagedata><tw-passagedata pid="55" name="death" tags="" position="57,2579" size="100,200">(text-style:&quot;underline&quot;)[You follow the figure, somehow less tall and imposing than they were when you first arrived.
+You don&#39;t talk about the kitchen, and the questions that you burned to ask before grow quieter in your head. 
 
-[[I trust you]]
-[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="57" name="end" tags="" position="309,3277" size="100,200">UNFINISHED ENDING</tw-passagedata><tw-passagedata pid="58" name="You&#39;ve &#39;&#39;heard?&#39;&#39;" tags="" position="588,2248" size="100,100">It&#39;s an expression.
+Like a sunrise, you feel yourself change while the world watches and changes with you.]
+[(text-colour:(hsl:225,0.7273,0.5686,0.6))[[You are new, and old, all at the same time.]]]
+</tw-passagedata><tw-passagedata pid="56" name="heard" tags="" position="636,2064" size="100,100">It&#39;s an expression.
 
-[[I trust you]]
-[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="59" name="I trust you" tags="" position="765,2527" size="100,100">Come on now. It&#39;s time.
+[[Okay. I&#39;ll buy it. What&#39;s next?|I trust you]]
+[[You&#39;re lucky you&#39;ve already got me on side|I trust you]]
+[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="57" name="I trust you" tags="" position="820,2322" size="100,100">Come on now. It&#39;s time.
 
-[[Okay|end]]</tw-passagedata><tw-passagedata pid="60" name="This is all new to you too, isn&#39;t it?" tags="" position="783,3294" size="100,100">UNFINISHED THREAD</tw-passagedata><tw-passagedata pid="61" name="I can imagine." tags="" position="817,2143" size="100,100">Come on now. It&#39;s time.
+[[Okay|death]]</tw-passagedata><tw-passagedata pid="58" name="This is all new to you too, isn&#39;t it?" tags="" position="795.6666666666666,3256.6666666666665" size="100,100">Of course this isn&#39;t &quot;new&quot; to me - nothing here is new.
 
-[[Okay|end]]</tw-passagedata><tw-passagedata pid="62" name="Is it them though?" tags="" position="1412,2394" size="100,100">In a sense. Are you &quot;you&quot;, anymore?
+
+[[sorry, I&#39;m not sure why I thought that]]
+[[How long have you been here, exactly?]]
+[[this is *absolutely* new to you!-&gt;newtoyou]]
+
+</tw-passagedata><tw-passagedata pid="59" name="I can imagine." tags="" position="817,2143" size="100,100">Come on now. It&#39;s time.
+
+[[Okay|death]]</tw-passagedata><tw-passagedata pid="60" name="Is it them though?" tags="" position="1412,2394" size="100,100">In a sense. Are you &quot;you&quot;, anymore?
 
 [[I&#39;m still me!]]
-[[I guess not]]</tw-passagedata><tw-passagedata pid="63" name="Is it safe?" tags="" position="1571,2722" size="100,100">You needn&#39;t be concerned with safety anymore. But, for the record, yes.
+[[I guess not]]</tw-passagedata><tw-passagedata pid="61" name="Is it safe?" tags="" position="1571,2722" size="100,100">You needn&#39;t be concerned with safety anymore. But, for the record, yes.
 
 [[That doesn&#39;t put me any more at ease.]]
 [[Is that all the details you have?]]
-[[Okay, I&#39;m ready to go|I&#39;m ready to go]]</tw-passagedata><tw-passagedata pid="64" name="I&#39;m still me!" tags="" position="1799,2605" size="100,100">Wait a while, and then see if you feel the same way.
+[[Okay, I&#39;m ready to go|I&#39;m ready to go]]</tw-passagedata><tw-passagedata pid="62" name="I&#39;m still me!" tags="" position="1799,2605" size="100,100">Wait a while, and then see if you feel the same way.
 
-[[*wait*|wait]] 
-[[I don&#39;t need to wait. I&#39;m ready to go.]]</tw-passagedata><tw-passagedata pid="65" name="I guess not" tags="" position="1549,2544" size="100,100">Exactly. Now, are you ready to go?
+[[**wait**|wait]] 
+[[I don&#39;t need to wait. I&#39;m ready to go.]]</tw-passagedata><tw-passagedata pid="63" name="I guess not" tags="" position="1549,2544" size="100,100">Exactly. Now, are you ready to go?
 
 [[I&#39;ve still got a few more questions|questions]]
-[[I&#39;m ready to go]]</tw-passagedata><tw-passagedata pid="66" name="I don&#39;t need to wait. I&#39;m ready to go." tags="" position="1172,2652" size="100,100">Come on now. It&#39;s time.
+[[I&#39;m ready to go]]</tw-passagedata><tw-passagedata pid="64" name="I don&#39;t need to wait. I&#39;m ready to go." tags="" position="1172,2652" size="100,100">Come on now. It&#39;s time.
 
-[[Okay|end]]</tw-passagedata><tw-passagedata pid="67" name="I&#39;m ready to go" tags="" position="929,2530" size="100,100">Come on now. It&#39;s time.
+[[Okay|death]]</tw-passagedata><tw-passagedata pid="65" name="I&#39;m ready to go" tags="" position="929,2530" size="100,100">Come on now. It&#39;s time.
 
-[[Okay|end]]</tw-passagedata><tw-passagedata pid="68" name="questions" tags="" position="2246,874" size="100,100">Shoot.
+[[Okay|death]]</tw-passagedata><tw-passagedata pid="66" name="questions" tags="" position="2359,874" size="100,100">Only a few. Then we have to go.
 
 [[Is Sally okay?]]
 [[What happens next?|next]]
 [[How did I die?]]
 [[What happens if I wait?]]
-[[How would &#39;&#39;you&#39;&#39; describe where I am?|What&#39;s yours?]]</tw-passagedata><tw-passagedata pid="69" name="That doesn&#39;t put me any more at ease." tags="" position="1352.3333333333333,3003.3333333333335" size="100,100">I understand. But it&#39;s all I can do. You can come now, or wait a bit longer.
+[[How would *you* describe where I am?|What&#39;s yours?]]</tw-passagedata><tw-passagedata pid="67" name="That doesn&#39;t put me any more at ease." tags="" position="1352,3003" size="100,100">I understand. But it&#39;s all I can do. You can come now, or wait a bit longer.
 
 [[I still have some questions!]]
-[[Can I wait a bit longer?]]</tw-passagedata><tw-passagedata pid="70" name="Is that all the details you have?" tags="" position="1811,2726.6666666666665" size="100,100">Unfortunately so. But you&#39;ll be there soon enough to find out for yourself.
+[[Can I wait a bit longer?]]</tw-passagedata><tw-passagedata pid="68" name="Is that all the details you have?" tags="" position="1811,2726" size="100,100">Unfortunately so. But you&#39;ll be there soon enough to find out for yourself.
 
 [[Will I remember this?]]
 [[Okay, I&#39;m ready to go|I&#39;m ready to go]]
-[[Can I wait a bit longer?]]</tw-passagedata><tw-passagedata pid="71" name="I still have some questions!" tags="" position="1126,2867" size="100,100">I&#39;m sorry, but that&#39;s no longer possible. It&#39;s time to go.
+[[Can I wait a bit longer?]]</tw-passagedata><tw-passagedata pid="69" name="I still have some questions!" tags="" position="1126,2867" size="100,100">I&#39;m sorry, but that&#39;s no longer possible. It&#39;s time to go.
 
 [[Can I just wait a bit longer?|Can I wait a bit longer?]]
-[[Okay, I&#39;m ready to go|I&#39;m ready to go]]</tw-passagedata><tw-passagedata pid="72" name="Can I wait a bit longer?" tags="" position="2055.666666666667,2870.6666666666665" size="100,100">Of course you can.
+[[Okay, I&#39;m ready to go|I&#39;m ready to go]]</tw-passagedata><tw-passagedata pid="70" name="Can I wait a bit longer?" tags="" position="1986.3333333333333,2979.6666666666665" size="100,100">Of course you can.
 
-[[*wait*|wait]]</tw-passagedata><tw-passagedata pid="73" name="Will I remember this?" tags="" position="1544,3099" size="100,100">I don&#39;t think so
+(text-style:&quot;underline&quot;)[[*wait*|wait]]</tw-passagedata><tw-passagedata pid="71" name="Will I remember this?" tags="" position="1544,3099" size="100,100">I don&#39;t think so
 
 
 [[You don&#39;t think so?]]
 [[Okay, I&#39;m ready to go|I&#39;m ready to go]]
 [[Can I wait a bit longer?]]
 [[How come you don&#39;t know?]]
-</tw-passagedata><tw-passagedata pid="74" name="You don&#39;t think so?" tags="" position="1126,3109" size="100,100">I can&#39;t be completely sure.
+</tw-passagedata><tw-passagedata pid="72" name="You don&#39;t think so?" tags="" position="1009,3130" size="100,100">I can&#39;t be completely sure.
 
-[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="75" name="How come you don&#39;t know?" tags="" position="1748,3267" size="100,100">I haven&#39;t done the next bit before.
+[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="73" name="How come you don&#39;t know?" tags="" position="1359,3219" size="100,100">I haven&#39;t done the next bit before.
 
-[[This is all new to you too, isn&#39;t it?]]</tw-passagedata></tw-storydata>
+[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="74" name="sorry, I&#39;m not sure why I thought that" tags="" position="689.3333333333334,3394.6666666666665" size="100,100">That&#39;s okay. You&#39;re holding up pretty well, considering.
+
+
+[[Thanks?]]
+[[Considering what?]]
+[[Better than you did?]]</tw-passagedata><tw-passagedata pid="75" name="Fine. It&#39;s not &quot;new&quot; - but what you are experiencing here is not habitual, am I right?" tags="" position="1483,3819" size="100,100">It&#39;s not habitual,  no.
+
+[[Then what is it then?]]
+ </tw-passagedata><tw-passagedata pid="76" name="newtoyou" tags="" position="1033,3521" size="200,100">As I said - nothing here is &quot;new&quot; - it just is. &quot;New&quot; is your word for it, not mine
+
+[[Sorry I said anything|I&#39;m sorry I questioned you]]
+
+[[Fine. It&#39;s not &quot;new&quot; - but what you are experiencing here is not habitual, am I right?]]
+
+(if:(history: where its name contains &quot;What&#39;s yours?&quot;)&#39;s length &gt;= 1) + (text-colour:(hsl:50,0.7486,0.3588,0.7))[(text-style:&quot;underline&quot;)[asked about &quot;death&quot;:]] (if:(history: where its name contains &quot;What&#39;s yours?&quot;)&#39;s length &gt;= 1) [[ So, what&#39;s your word for it?]]</tw-passagedata><tw-passagedata pid="77" name="doyouknow" tags="" position="251,2103" size="100,100">Of course I do
+
+[[I trust you]]
+[[This is all new to you too, isn&#39;t it?]]</tw-passagedata><tw-passagedata pid="78" name="How long have you been here, exactly?" tags="" position="1428,3492" size="100,100">I keep telling you - if you haven&#39;t already begun, you&#39;ll soon start forgetting what &quot;time&quot; even is here
+
+[[How is that possible?|Then what is it then?]]
+[[I don&#39;t believe you]]
+[[Wait - you just used the word &quot;soon&quot;]]</tw-passagedata><tw-passagedata pid="79" name="You are new, and old, all at the same time." tags="" position="61.33333333333333,3321" size="100,100">(text-style:&quot;underline&quot;)[You don&#39;t remember the kitchen at all now. 
+]
+(text-colour:(hsl:225,0.5607,0.3392,0.45))[[You are who you are]]</tw-passagedata><tw-passagedata pid="80" name="You are who you are" tags="" position="160.33333333333334,3483.3333333333335" size="100,100">(text-style:&quot;underline&quot;)[And just like that, it&#39;s all over.
+]
+
+
+
+(text-colour:(hsl:225,0.5607,0.3392,0.1))[[Or is it?]]</tw-passagedata><tw-passagedata pid="81" name="Yes, but how do you know that" tags="" position="2116,1619" size="100,100">It&#39;s part of the job.
+
+[[And what&#39;s the job?]]</tw-passagedata><tw-passagedata pid="82" name="Considering what?" tags="" position="550.6666666666666,3520.666666666667" size="100,100">Never mind. 
+
+[[Okay. Is it time to go?|Is it time to go?]] 
+
+[[No, come on, considering what?]]
+</tw-passagedata><tw-passagedata pid="83" name="Thanks?" tags="" position="677,3246" size="100,100">You&#39;re welcome.
+
+[[Is it time to go?]]</tw-passagedata><tw-passagedata pid="84" name="Better than you did?" tags="" position="917,3980" size="100,100">Excuse me?
+
+[[Sorry. I&#39;m lashing out. I don&#39;t know why I&#39;m being like this at all.]]
+[[You heard me. Drop the act, game&#39;s up|droptheact]]</tw-passagedata><tw-passagedata pid="85" name="Is it time to go?" tags="" position="556,3163" size="100,100">It is.
+
+(text-style:&quot;underline&quot;)[[*go*|death]]</tw-passagedata><tw-passagedata pid="86" name="Or is it?" tags="" position="21.666666666666664,3629" size="200,200">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="87" name=" So, what&#39;s your word for it?" tags="" position="1435,4002" size="100,100">Very funny.
+
+
+[[No, really|serious]]
+[[I&#39;m serious!|serious]]
+[[Fine. It&#39;s not &quot;new&quot; - but what you are experiencing here is not habitual, am I right?]]
+</tw-passagedata><tw-passagedata pid="88" name="No, come on, considering what?" tags="" position="678.6666666666666,3975.3333333333335" size="100,100">It&#39;s okay if you don&#39;t remember
+
+(set:$fourthHook to &quot;[I do remember! I remember Sally!]&lt;fourthHook|&quot;) $fourthHook
+(click-replace: ?fourthHook)[$fourthHook]
+(set:$fourthHook to &quot;[[I do remember! I rememember her!]]&lt;fourthHook|&quot;)
+
+
+(set:$thirdHook to &quot;[I do remember! I remember the kitchen!]&lt;thirdHook|&quot;) $thirdHook
+(click-replace: ?thirdHook)[$thirdHook]
+(set:$thirdHook to &quot;[[I do remember! I rememember where I was!]]&lt;thirdHook|&quot;)
+
+[[I&#39;m scared. Why can&#39;t I remember?]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="89" name="I&#39;m scared. Why can&#39;t I remember?" tags="" position="495.6666666666667,3922.6666666666665" size="100,100">It&#39;s okay. There&#39;s nothing to worry about. Come on, let&#39;s go
+
+[[Okay, let&#39;s go|death]]</tw-passagedata><tw-passagedata pid="90" name="I do remember! I rememember where I was!" tags="" position="557.3333333333334,4212" size="100,100">It&#39;s okay not to remember. 
+
+[[It is?]]
+[[Why can&#39;t I remember where I was?|Why can&#39;t I remember her?]]
+(set:$1Hook to &quot;[No. NO. I was in the kitchen!]&lt;1Hook|&quot;) $1Hook
+(click-replace: ?1Hook)[$1Hook]
+(set:$1Hook to &quot;[[No. NO. I was ...]]&quot;)</tw-passagedata><tw-passagedata pid="91" name="I do remember! I rememember her!" tags="" position="230,4226" size="100,100">It&#39;s okay not to remember. 
+
+[[It is?]]
+[[Why can&#39;t I remember her?]]
+(set:$1Hook to &quot;[No. NO. Her name was Sally]&lt;1Hook|&quot;) $1Hook
+(click-replace: ?1Hook)[$1Hook]
+(set:$1Hook to &quot;[[No. NO. Her name was ...]]&quot;)</tw-passagedata><tw-passagedata pid="92" name="I don&#39;t believe you" tags="" position="1920,3269" size="100,100">That&#39;s okay. I don&#39;t mind. We should go, though.
+
+[[Can&#39;t I just wait here instead?|Do we have to go now? Can I just stay here?]]
+[[I&#39;d like to get to the bottom of this, please]]</tw-passagedata><tw-passagedata pid="93" name="Wait - you just used the word &quot;soon&quot;" tags="" position="1085,3844" size="100,100">I&#39;m using words and concepts you&#39;re familiar with to put you at ease. I&#39;ve been doing it the whole time.
+
+[[I&#39;m sorry I questioned you]]
+[[Okay. I&#39;m still not sure if I trust you though]]
+[[Something&#39;s going on here. Drop the act.|droptheact]]</tw-passagedata><tw-passagedata pid="94" name="It is?" tags="" position="349,3821" size="100,100">It&#39;s fine. Everything&#39;s going to be okay. But we need to go.
+
+[[Okay, let&#39;s go|death]]
+[[Can I just wait here a little longer?|Do we have to go now? Can I just stay here?]]</tw-passagedata><tw-passagedata pid="95" name="Why can&#39;t I remember her?" tags="" position="58,3949" size="100,100">Remember what, exactly?
+
+[[I&#39;m not sure]]
+(set:$1Hook to &quot;[Sally]&lt;1Hook|&quot;) $1Hook
+(click-replace: ?1Hook)[$1Hook]
+(set:$1Hook to &quot;//[[Her]]//&quot;)
+</tw-passagedata><tw-passagedata pid="96" name="serious" tags="" position="1570,4096" size="100,100">Are you sure you want to ask me this sort of question(if:(history: where its name contains &quot;So, are you going to tell me?&quot;)&#39;s length is 0)[?]
+(if:(history: where its name contains &quot;So, are you going to tell me?&quot;)&#39;s length &gt;= 1)[again? You didn&#39;t even remember hearing it last time.]
+
+
+
+(if:(history: where its name contains &quot;So, are you going to tell me?&quot;)&#39;s length &gt;= 1)[[(LIE) Of course I remember hearing it!]]
+(if:(history: where its name contains &quot;So, are you going to tell me?&quot;)&#39;s length &gt;= 1)[[Wow. I don&#39;t. What did I ask you before?]]
+
+[[Yeah, why not?]]
+[[Is it okay to ask?]]
+[[Maybe I shouldn&#39;t]]</tw-passagedata><tw-passagedata pid="97" name="I&#39;m sorry I questioned you" tags="" position="936,3677" size="100,100">That&#39;s okay
+
+[[Is it time to go?]]</tw-passagedata><tw-passagedata pid="98" name="Okay. I&#39;m still not sure if I trust you though" tags="" position="1278.3333333333333,4158" size="100,100">You don&#39;t have to trust me. I assure you, come with me, and all will be made clear.
+You could also wait here, if you wish, for a bit.
+
+[[What happens if I go with you?]]
+[[What happens if I wait?]]
+[[Okay, let&#39;s go|death]]
+[[Okay, I&#39;ll wait|wait]]</tw-passagedata><tw-passagedata pid="99" name="droptheact" tags="" position="1176,5103.333333333333" size="100,200">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="100" name="Sorry. I&#39;m lashing out. I don&#39;t know why I&#39;m being like this at all." tags="" position="725.3333333333334,3734.333333333333" size="100,100">Again, it&#39;s fine. But really, we do need to go now.
+
+[[Okay|death]]
+[[Do we have to go now? Can I just stay here?]]</tw-passagedata><tw-passagedata pid="101" name="Do we have to go now? Can I just stay here?" tags="" position="853.3333333333334,3444" size="100,100">I&#39;ll see what I can do.
+
+(text-style:&quot;underline&quot;)[[*wait*|wait]]
+</tw-passagedata><tw-passagedata pid="102" name="What happens if I go with you?" tags="" position="916.3333333333334,4635.666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="103" name="No. NO. Her name was ..." tags="" position="288,4439" size="100,100">Her name doesn&#39;t matter anymore. None of this does. But we really should get going. 
+
+[[Okay. I&#39;ll go|death]].
+[[What happens if I go with you?]]
+[[I&#39;m not going anywhere with you!]]</tw-passagedata><tw-passagedata pid="104" name="No. NO. I was ..." tags="" position="398,4260.666666666667" size="100,100">Where you were doesn&#39;t matter anymore. None of this does. But we really should get going. 
+
+[[Okay. I&#39;ll go|death]].
+[[What happens if I go with you?]]
+[[I&#39;m not going anywhere with you!]]</tw-passagedata><tw-passagedata pid="105" name="I&#39;m not going anywhere with you!" tags="" position="761,4309" size="100,100">You don&#39;t have to go with me. You could wait here, if you wished to. I&#39;d really prefer the former though.
+
+[[What happens if I go with you?]]
+[[What happens if I wait?]]
+[[Okay, let&#39;s go|death]]
+[[Okay, I&#39;ll wait|wait]]
+[[Do I have any other options?]]</tw-passagedata><tw-passagedata pid="106" name="Do I have any other options?" tags="" position="952.3333333333334,4346.666666666666" size="100,100">Unfortunately not.
+
+[[Okay, I&#39;ll wait]]
+[[Okay, I&#39;ll go|death]]</tw-passagedata><tw-passagedata pid="107" name="Okay, I&#39;ll wait" tags="" position="599.6666666666666,4683.333333333333" size="100,100">I&#39;m sorry. That opportunity has passed. We need to go now.
+
+[[Okay. Let&#39;s go|death]]</tw-passagedata><tw-passagedata pid="108" name="I&#39;m not sure" tags="" position="81,4586" size="100,100">You don&#39;t need to remember. It&#39;s okay. Come on. We need to go.
+
+[[Okay, let&#39;s go|death]]</tw-passagedata><tw-passagedata pid="109" name="Her" tags="" position="186.66666666666666,4592" size="100,100">You don&#39;t need to remember. It&#39;s okay. Come on. We need to go.
+
+[[Okay, let&#39;s go|death]]</tw-passagedata><tw-passagedata pid="110" name="Then what is it then?" tags="" position="1894,3991" size="100,100">My entire existence here has been this - it&#39;s not a question of existing before or after this; this is just is.
+
+[[So you were and always will be &quot;this&quot;?]]</tw-passagedata><tw-passagedata pid="111" name="(LIE) Of course I remember hearing it!" tags="" position="1704.6666666666665,4566" size="100,100">I can tell you&#39;re lying.
+
+[[(LIE) I&#39;m not lying!]]
+[[You got me.]]
+[[Do you think I&#39;ll remember this one?]]</tw-passagedata><tw-passagedata pid="112" name="Wow. I don&#39;t. What did I ask you before?" tags="" position="1913,4566" size="100,100">You asked me about my word for death.
+
+[[And I forgot?]]</tw-passagedata><tw-passagedata pid="113" name="So you were and always will be &quot;this&quot;?" tags="" position="2283.333333333333,4323.666666666667" size="100,100">No need to gesture. I do have feelings too.
+And yes, I will always be this, dependent on our understanding of &quot;always&quot;.
+
+[[Sorry, I didn&#39;t think you could see me]]
+[[So, what is your understanding of your &quot;before&quot;?]]
+[[Do you like it?]]</tw-passagedata><tw-passagedata pid="114" name="Sorry, I didn&#39;t think you could see me" tags="" position="2820,4412.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="115" name="So, what is your understanding of your &quot;before&quot;?" tags="" position="2702,4301" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="116" name="Do you like it?" tags="" position="2700,4497.333333333333" size="100,100">It pays the bills, as you might say.
+
+</tw-passagedata><tw-passagedata pid="117" name="I&#39;d like to get to the bottom of this, please" tags="jazz" position="2470.3333333333335,3456.6666666666665" size="100,100">Okay. You can ask one question. And then you&#39;ll come with.
+
+[[Was that a sigh?]]
+(if:(history: where its name contains &quot;Thank you&quot;)&#39;s length &gt;= 1)[[Was what you told me before about Sally the truth?]]
+(if:(history: where its name contains &quot;Thank you&quot;)&#39;s length is 0)[[What happens to Sally?]]
+
+[[what happens next?]]
+
+
+
+&lt;div class=&quot;jazz&quot;&gt;(set:$touch to &quot;[Who were you before this?]&lt;touch|&quot;) $touch&lt;/div&gt;
+(mouseover-replace: ?touch)[$touch]
+(set:$touch to &quot;[[Who was the best jazz player to ever exist?]]&quot;)
+
+
+
+(text-colour:(hsl:225,0.7273,0.5686,1))[(text-style:&quot;bold&quot;)[&#39;&#39;bello&#39;&#39;]]
+
+</tw-passagedata><tw-passagedata pid="118" name="Yeah, why not?" tags="" position="1350,5462.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="119" name="Is it okay to ask?" tags="" position="1369.3333333333335,4515.666666666666" size="100,100">It&#39;s fine, I think. Are you sure you want to hear?
+
+[[Perhaps I shouldn&#39;t]]
+[[Yes, I&#39;d like to hear]]</tw-passagedata><tw-passagedata pid="120" name="Maybe I shouldn&#39;t" tags="" position="2021.6666666666667,4384.666666666667" size="100,100">It might be for the best. I&#39;m not quite sure how it would affect you.
+
+[[Okay then. Let&#39;s talk about something else]]
+[[Actually, I would like to hear]]</tw-passagedata><tw-passagedata pid="121" name="Was that a sigh?" tags="" position="2101.666666666667,3661.3333333333335" size="100,100">Yes. And that was your one question. It&#39;s time to go.
+
+[[Are you kidding me?]]</tw-passagedata><tw-passagedata pid="122" name="Are you kidding me?" tags="" position="2131.666666666667,3490.6666666666665" size="100,100">I told you, you only get one. Let&#39;s go.
+
+(text-style:&quot;underline&quot;)[[*go*|death]]
+</tw-passagedata><tw-passagedata pid="123" name="Was what you told me before about Sally the truth?" tags="" position="2383,3746.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="124" name="What happens to Sally?" tags="" position="2503,3744.666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="125" name="Who was the best jazz player to ever exist?" tags="" position="2683.6666666666665,3701.666666666667" size="100,100">Oscar Peterson. 
+
+[[What the hell?|tricked]]
+[[That isn&#39;t what I mean&#39;t to ask!|tricked]]
+[[You tricked me!|tricked]]
+</tw-passagedata><tw-passagedata pid="126" name="tricked" tags="" position="2780.3333333333335,4010.3333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="127" name="what happens next?" tags="" position="2212,3806.6666666666665" size="100,100">I can&#39;t tell you that, unfortunately. But you can find out. 
+
+[[You said 1 q]]</tw-passagedata><tw-passagedata pid="128" name="You said 1 q" tags="" position="2198.6666666666665,4010" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="129" name="Untitled Passage" tags="" position="2013,1056" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="130" name="And I forgot?" tags="" position="1873,4794.333333333333" size="100,100">&quot;Forgot&quot; is a way to understand it, yes. What I showed you was so alien, so foreign to your psyche, that it was pushed out of your mind near instantly.
+
+[[Cool.]]
+[[So, if I couldn&#39;t understand that, how come I can understand what&#39;s happening to me right now?]]</tw-passagedata><tw-passagedata pid="131" name="Okay then. Let&#39;s talk about something else" tags="" position="2098,4561.333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="132" name="Actually, I would like to hear" tags="" position="2288,4544.666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="133" name="(LIE) I&#39;m not lying!" tags="" position="1536.3333333333333,4752.666666666667" size="100,100">I cannot express how little it matters whether you continue to lie about this or not.
+
+[[(LIE) That&#39;s good, because I&#39;m not.]]
+[[That&#39;s lucky, because what you&#39;re saying doesn&#39;t matter to me either.]]
+[[I&#39;m sorry. I&#39;m really not sure what&#39;s going on with me.]]</tw-passagedata><tw-passagedata pid="134" name="You got me." tags="" position="1543,4316" size="100,100">Thank you for being mature enough to admit it.
+
+[[You&#39;re welcome]]</tw-passagedata><tw-passagedata pid="135" name="Do you think I&#39;ll remember this one?" tags="" position="1776.3333333333335,4921" size="100,100">I see no reason why you would.
+
+[[I&#39;d like to hear it anyway]]
+[[Well, I guess there&#39;s no point then.]]</tw-passagedata><tw-passagedata pid="136" name="I&#39;d like to hear it anyway" tags="" position="1594.6666666666665,5481" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="137" name="Well, I guess there&#39;s no point then." tags="" position="1986.333333333333,5319.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="138" name="Cool." tags="" position="2014.6666666666672,4984.333333333333" size="100,100">Cool indeed. Want to give it another shot?
+
+[[Nah, why bother?]]
+[[Yeah, I&#39;d love to]]</tw-passagedata><tw-passagedata pid="139" name="So, if I couldn&#39;t understand that, how come I can understand what&#39;s happening to me right now?" tags="" position="2199.666666666666,4800.999999999999" size="100,100">You can&#39;t. And I wouldn&#39;t recommend trying to anymore so than you already have?
+
+[[Oh.]]
+(text-style:&quot;underline&quot;)[[*Peer into the darkness*|peer]]
+</tw-passagedata><tw-passagedata pid="140" name="Oh." tags="" position="2188,5154.333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="141" name="peer" tags="" position="2341.3333333333335,5054.333333333334" size="100,100">(text-style:&quot;underline&quot;)[The world around you, all at once appearing like something just in the corner of your eye, begins to take slow shape.
+]
+I wouldn&#39;t do that if I were you
+
+(text-style:&quot;underline&quot;)[[*peer further*|peerfurther]]
+[[It&#39;s probably for the best that I don&#39;t try to see any more than I have]]</tw-passagedata><tw-passagedata pid="142" name="peerfurther" tags="" position="2909.6666666666665,4977.666666666668" size="200,200">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="143" name="Perhaps I shouldn&#39;t" tags="" position="1286.3333333333335,4340.666666666667" size="100,100">Let&#39;s not then.
+Also, we really should go now.
+
+[[I think I&#39;m ready|death]]
+[[Can I just wait a little longer?|Can I wait a bit longer?]]</tw-passagedata><tw-passagedata pid="144" name="Yes, I&#39;d like to hear" tags="" position="1474.6666666666665,5479.333333333334" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="145" name="You&#39;re welcome" tags="" position="1408,4247.666666666667" size="100,100">We really should get going, you know.
+
+
+[[I think I&#39;m ready|death]]
+[[Can I just wait a little longer?|Can I wait a bit longer?]]</tw-passagedata><tw-passagedata pid="146" name="(LIE) That&#39;s good, because I&#39;m not." tags="" position="1072.9999999999998,4804.333333333332" size="100,100">Okay. That&#39;s fine.
+Come on, we need to go.
+
+
+[[I&#39;m not coming because you told me to, this act is of my own volition.|death]]
+[[Do we have to go now? Can I just stay here?|Okay, I&#39;ll wait]]</tw-passagedata><tw-passagedata pid="147" name="That&#39;s lucky, because what you&#39;re saying doesn&#39;t matter to me either." tags="" position="2499.666666666667,4701.000000000001" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="148" name="I&#39;m sorry. I&#39;m really not sure what&#39;s going on with me." tags="" position="1504.6666666666667,4569.333333333334" size="100,100">It is fine. But really, we do need to go now.
+
+[[Okay|death]]
+[[Do we have to go now? Can I just stay here?]]</tw-passagedata><tw-passagedata pid="149" name="It&#39;s probably for the best that I don&#39;t try to see any more than I have" tags="" position="2336.3333333333335,5242.666666666668" size="100,100">I absolutely agree.
+
+(text-style:&quot;underline&quot;)[[*attempt to discretely look*|peerattempt]]
+[[So, what happens next?]]
+</tw-passagedata><tw-passagedata pid="150" name="Nah, why bother?" tags="" position="2093,5335.999999999999" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="151" name="Yeah, I&#39;d love to" tags="" position="1704.666666666667,5486.000000000001" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="152" name="peerattempt" tags="" position="2323,5446.000000000001" size="100,100">I can see you</tw-passagedata><tw-passagedata pid="153" name="So, what happens next?" tags="" position="2514.6666666666665,5294.333333333335" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
